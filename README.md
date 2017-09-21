@@ -1,8 +1,8 @@
 Node application to help managing Maturity Models like the ones created by BSIMM and OpenSAMM
 
-Build status: [![Build Status](https://travis-ci.org/OWASP/Maturity-Models.svg?branch=master)](https://travis-ci.org/OWASP/Maturity-Models)
+Build status: [![Build Status](https://travis-ci.org/aberner/Maturity-Models.svg?branch=master)](https://travis-ci.org/aberner/Maturity-Models)
 
-Current QA server: http://138.68.145.52
+Current QA server: http://http://94.156.189.145
 
 ### UI
 ![image](https://cloud.githubusercontent.com/assets/656739/16320406/67632dc0-398f-11e6-8aee-8a1f9bd97364.png)
@@ -10,7 +10,7 @@ Current QA server: http://138.68.145.52
 ### Run from source
 
 ```
-git clone git@github.com:DinisCruz/Maturity-Models.git
+git clone git@github.com:aberner/Maturity-Models.git
 cd Maturity-Models
 git submodule init
 git submodule update
@@ -40,13 +40,13 @@ You can check if all is good by doing an ```git status``` on the root folder of 
 
 ### Docker image
 
-Available at https://hub.docker.com/r/diniscruz/maturity-models/
+Available at https://hub.docker.com/r/aberner/maturity-models/
 
 run with (port 80): 
-docker run -it -p 80:3000 diniscruz/maturity-models 
+docker run -it -p 80:3000 --name maturity-models diniscruz/maturity-models 
 
 or with (as demon on port 3333): 
-docker run -it -d -p 3333:3000 diniscruz/maturity-models 
+docker run -it -d -p 3333:3000 --name maturity-models  diniscruz/maturity-models 
 
 
 ### BSIMM-Graphs
