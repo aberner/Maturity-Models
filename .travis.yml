@@ -1,4 +1,3 @@
-{
   "sudo": "required",
   "services": [
     "docker"
@@ -9,3 +8,57 @@
   "dist": "trusty",
   "os": "linux"
 }
+
+
+
+git:
+    submodules: false
+
+
+before_install:
+    - cat .gitmodules
+    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    - cat .gitmodules
+    - git submodule update --init --recursive
+
+before_script:
+
+  - cd code/api
+  - npm install
+  - cd ../ui
+  - npm install
+  - npm install -g bower
+  - npm install -g gulp
+  - bower install
+  - gulp
+  - cd ../..
+
+
+script:
+  - echo ">>>>> Running core tests<<<<<"
+  - npm test
+  - echo ">>>>> Running UI tests<<<<<"
+  - cd code/ui
+  - npm test
+  - cd ../..
+
+
+after_success:
+
+  - echo ">>>>> Updating Dev fork <<<<<"
+  - git remote add upstream https://aberner-Dev:$git_pwd@github.com/aberner/Maturity-Models.git
+  - git push -f upstream
+
+  - echo ">>>>> Building DOCKER IMAGE and pushing it go Docker Hub <<<<<"
+  - echo 'building docker image'
+  - docker images
+  - docker build -t aberner/maturity-models .
+  - docker images
+  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+  - docker push aberner/maturity-models
+
+  - echo ">>>>> Running core tests (on deployed Docker server)<<<<<"
+  - cd code/qa
+  - npm install --quiet
+  - npm test
+
