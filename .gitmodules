@@ -1,6 +1,3 @@
-[submodule "data/BSIMM-Graphs-Data"]
-	path = data/BSIMM-Graphs-Data
-	url = git@github.com:aberner/BSIMM-Graphs-Data.git
 [submodule "code/api"]
 	path = code/api
 	url = git@github.com:OWASP/Maturity-Models-API.git
@@ -16,3 +13,6 @@
 [submodule "data/OwaspASVS"]
 	path = data/OwaspASVS
 	url = git@github.com:OWASP/Maturity-Models-OWASP-ASVS.git
+[submodule "data/BSIMM-Graphs-Data"]
+	path = data/BSIMM-Graphs-Data
+	url = https://github.com/aberner/BSIMM-Graphs-Data
