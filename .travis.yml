@@ -51,16 +51,16 @@ script:
 after_success:
 
   - echo ">>>>> Updating Dev fork <<<<<"
-  - git remote add upstream https://DinisCruz-Dev:$git_pwd@github.com/DinisCruz-Dev/Maturity-Models.git
+  - git remote add upstream https://aberner-Dev:$git_pwd@github.com/aberner/Maturity-Models.git
   - git push -f upstream
 
   - echo ">>>>> Building DOCKER IMAGE and pushing it go Docker Hub <<<<<"
   - echo 'building docker image'
   - docker images
-  - docker build -t diniscruz/maturity-models .
+  - docker build -t aberner/maturity-models .
   - docker images
   - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-  - docker push diniscruz/maturity-models
+  - docker push aberner/maturity-models
 
   - echo ">>>>> Running core tests (on deployed Docker server)<<<<<"
   - cd code/qa
@@ -69,9 +69,9 @@ after_success:
 
 #  - echo ">>>>> Cloning Maturity-Models-QA, adding extra commit and pushing it to Maturity-Models-Dev for  <<<<<"
 #  - cd ..
-#  - git clone https://github.com/DinisCruz/Maturity-Models-QA.git
+#  - git clone https://github.com/aberner/Maturity-Models-QA.git
 #  - cd Maturity-Models-QA
-#  - git remote add upstream https://DinisCruz-Dev:$git_pwd@github.com/DinisCruz-Dev/Maturity-Models-QA.git
+#  - git remote add upstream https://aberner-Dev:$git_pwd@github.com/aberner-Dev/Maturity-Models-QA.git
 #
 #  - git config --global user.email "bot@travis.com"
 #  - git config --global user.name "Travis Bot"

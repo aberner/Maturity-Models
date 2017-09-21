@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DinisCruz/Maturity-Models.git"
+    "url": "git+https://github.com/aberner/Maturity-Models.git"
   },
   "author": "Dinis Cruz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DinisCruz/Maturity-Models/issues"
+    "url": "https://github.com/aberner/Maturity-Models/issues"
   },
   "homepage": "https://github.com/DinisCruz/Maturity-Models#readme",
   "engines": {

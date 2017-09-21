@@ -1,6 +1,6 @@
 FROM    node
 
-RUN 	git clone https://github.com/OWASP/Maturity-Models.git
+RUN 	git clone https://github.com/aberner/Maturity-Models.git
 WORKDIR Maturity-Models
 RUN     sed -i 's/git@github.com:/https:\/\/<user>:<token>@github.com\//' .gitmodules
 RUN     git submodule init
@@ -22,5 +22,5 @@ WORKDIR ../..
 CMD     npm start
 
 
-# travis builds image and deploys to docker hub at: diniscruz/maturity-models
-# build manually using: docker build -t diniscruz/maturity-models .
+# travis builds image and deploys to docker hub at: aberner/maturity-models
+# build manually using: docker build -t aberner/maturity-models .
