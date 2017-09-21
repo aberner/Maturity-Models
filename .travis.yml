@@ -1,13 +1,13 @@
-  "sudo": "required",
-  "services": [
-    "docker"
-  ],
-  "language": "node_js",
-  "node_js": "5",
-  "group": "stable",
-  "dist": "trusty",
-  "os": "linux"
-}
+sudo: required
+
+services: 
+     - docker
+
+language: node_js
+node_js: 5
+group: stable
+dist: trusty
+os: linux
 
 
 
