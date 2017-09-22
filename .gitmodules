@@ -13,6 +13,3 @@
 [submodule "data/OwaspASVS"]
 	path = data/OwaspASVS
 	url = https://github.com/OWASP/Maturity-Models-OWASP-ASVS
-[submodule "data/BSIMM-Graphs-Data"]
-	path = data/BSIMM-Graphs-Data
-	url = https://github.com/aberner/BSIMM-Graphs-Data
