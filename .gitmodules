@@ -16,3 +16,6 @@
 [submodule "data/BSIMM-Graphs-Data"]
 	path = data/BSIMM-Graphs-Data
 	url = https://github.com/aberner/BSIMM-Graphs-Data
+[submodule "data/NSM-Grunnprinsipper"]
+	path = data/NSM-Grunnprinsipper
+	url = https://github.com/aberner/NSM-Grunnprinsipper
