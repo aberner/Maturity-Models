@@ -1,18 +1,18 @@
 [submodule "code/api"]
 	path = code/api
-	url = git@github.com:OWASP/Maturity-Models-API.git
+	url = https://github.com/OWASP/Maturity-Models-API
 [submodule "code/ui"]
 	path = code/ui
-	url = git@github.com:OWASP/Maturity-Models-UI.git
+	url = https://github.com/OWASP/Maturity-Models-UI
 [submodule "code/qa"]
 	path = code/qa
-	url = git@github.com:OWASP/Maturity-Models-QA.git
+	url = https://github.com/OWASP/Maturity-Models-QA
 [submodule "data/OwaspSAMM"]
 	path = data/OwaspSAMM
-	url = git@github.com:OWASP/Maturity-Models-OwaspSAMM.git
+	url = https://github.com/OWASP/Maturity-Models-OwaspSAMM
 [submodule "data/OwaspASVS"]
 	path = data/OwaspASVS
-	url = git@github.com:OWASP/Maturity-Models-OWASP-ASVS.git
+	url = https://github.com/OWASP/Maturity-Models-OWASP-ASVS
 [submodule "data/BSIMM-Graphs-Data"]
 	path = data/BSIMM-Graphs-Data
 	url = https://github.com/aberner/BSIMM-Graphs-Data
