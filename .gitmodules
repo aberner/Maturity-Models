@@ -3,7 +3,7 @@
 	url = https://github.com/OWASP/Maturity-Models-API
 [submodule "code/ui"]
 	path = code/ui
-	url = https://github.com/OWASP/Maturity-Models-UI
+	url = https://github.com/aberner/Maturity-Models-UI
 [submodule "code/qa"]
 	path = code/qa
 	url = https://github.com/OWASP/Maturity-Models-QA
