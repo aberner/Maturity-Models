@@ -1,7 +1,5 @@
 Node application to help managing Maturity Models like the ones created by BSIMM and OpenSAMM
 
-Build status: [![Build Status](https://travis-ci.org/aberner/Maturity-Models.svg?branch=master)](https://travis-ci.org/aberner/Maturity-Models)
-
 Current QA server: http://http://94.156.189.145
 
 ### UI
